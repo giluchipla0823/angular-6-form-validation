@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./template-driven.component.css']
 })
 export class TemplateDrivenComponent implements OnInit {
+  model: any = {};
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit(f) {
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(f.value));
   }
 
 }
